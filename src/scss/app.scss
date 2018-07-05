@@ -1,0 +1,169 @@
+// GENERAL
+body {
+  margin: 0;
+  background-color: #F7F7F7;
+}
+
+.clear {
+  clear: both;
+}
+
+// NAVBAR
+.navbar {
+  &--starbucks {
+    box-sizing: border-box;
+    border-top: 5px solid #0A6242;
+    padding: 10px 3vw;
+    height: 70px;
+
+    background-color: #F7F7F7;
+  }
+
+  &__toggle {
+    border: 1px solid #0A6242;
+
+    .icon-bar {
+      background-color: #0A6242;
+    }
+  }
+
+  &__collapse {
+    background-color: #F7F7F7;
+  }
+
+  &__brand {
+    height: 100%;
+    width: auto;
+  }
+
+  // Lo escribimos como dentro de .navbar para que le gane en prioridad al default
+  .navbar__link {
+    // QUESTION: cómo bajar los links sin que aparezca un pedazo del collapse
+    // padding-top: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #000;
+
+    &:hover {
+      background-color: inherit;
+      color: #0A6242;
+    }
+  }
+}
+
+// BANNERS
+.banner {
+  margin-top: 70px;
+
+  &__inner {
+    padding: 50px 0;
+    margin-bottom: 10px;
+    width: 100%;
+
+    background-size: cover;
+
+    &--first {
+      background-image: url(../images/banner1.jpg);
+    }
+
+    &--second {
+      background-image: url(../images/stars2.png);
+    }
+
+    &--third {
+      background-image: url(../images/beans.png);
+    }
+  }
+
+  &__cuadro {
+    margin: 0 30px;
+    border-radius: 30px;
+    padding: 50px 10px;
+    opacity: 0.75;
+
+    background-color: #000;
+    text-align: center;
+    color: #FFF;
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    i {
+      margin: 10px 0;
+      font-size: 2.5em;
+    }
+
+    button {
+      border: 1px solid #FFF;
+      border-radius: 30px;
+      padding: 5px 0;
+      width: 180px;
+      background-color: inherit;
+
+      &:hover {
+        border-color: inherit;
+        background-color: #FFF;
+        color: #000;
+      }
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  padding: 50px 0 20px 0;
+  width: 100%;
+  text-align: center;
+
+  p {
+    padding-bottom: 20px;
+    font-size: 0.9em;
+    color: #000;
+  }
+
+  &__rrss {
+    height: 30px;
+    width: auto;
+  }
+
+  &__logo {
+    margin: 50px 0;
+    height: 50px;
+    width: auto;
+  }
+
+  &__line {
+    border-bottom: 15px solid #382F2E;
+  }
+}
+
+// BREAKPOINTS
+@media (min-width: 576px) {
+  .banner {
+    &__cuadro {
+      position: relative;
+      left: 50%;
+      margin-left: -225px;
+      width: 450px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    &__cuadro {
+      // reseteo
+      position: static;
+      margin-left: 0;
+      // nueva config
+      float: right;
+      margin-right: 10vw;
+    }
+  }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

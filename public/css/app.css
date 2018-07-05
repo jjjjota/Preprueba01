@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  background-color: #F7F7F7;
+}
+
+.clear {
+  clear: both;
+}
+
+.navbar--starbucks {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 5px solid #0A6242;
+  padding: 10px 3vw;
+  height: 70px;
+  background-color: #F7F7F7;
+}
+
+.navbar__toggle {
+  border: 1px solid #0A6242;
+}
+
+.navbar__toggle .icon-bar {
+  background-color: #0A6242;
+}
+
+.navbar__collapse {
+  background-color: #F7F7F7;
+}
+
+.navbar__brand {
+  height: 100%;
+  width: auto;
+}
+
+.navbar .navbar__link {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #000;
+}
+
+.navbar .navbar__link:hover {
+  background-color: inherit;
+  color: #0A6242;
+}
+
+.banner {
+  margin-top: 70px;
+}
+
+.banner__inner {
+  padding: 50px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  background-size: cover;
+}
+
+.banner__inner--first {
+  background-image: url(../images/banner1.jpg?23c19fc11411bec1f8938699a92aab4f);
+}
+
+.banner__inner--second {
+  background-image: url(../images/stars2.png?ef0af4beb544946d4ec1dcd2118a34a1);
+}
+
+.banner__inner--third {
+  background-image: url(../images/beans.png?f2fe8fdfd9332a107e71fe5ec2109352);
+}
+
+.banner__cuadro {
+  margin: 0 30px;
+  border-radius: 30px;
+  padding: 50px 10px;
+  opacity: 0.75;
+  background-color: #000;
+  text-align: center;
+  color: #FFF;
+}
+
+.banner__cuadro h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.banner__cuadro i {
+  margin: 10px 0;
+  font-size: 2.5em;
+}
+
+.banner__cuadro button {
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  padding: 5px 0;
+  width: 180px;
+  background-color: inherit;
+}
+
+.banner__cuadro button:hover {
+  border-color: inherit;
+  background-color: #FFF;
+  color: #000;
+}
+
+.footer {
+  padding: 50px 0 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  color: #000;
+}
+
+.footer__rrss {
+  height: 30px;
+  width: auto;
+}
+
+.footer__logo {
+  margin: 50px 0;
+  height: 50px;
+  width: auto;
+}
+
+.footer__line {
+  border-bottom: 15px solid #382F2E;
+}
+
+@media (min-width: 576px) {
+  .banner__cuadro {
+    position: relative;
+    left: 50%;
+    margin-left: -225px;
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__cuadro {
+    position: static;
+    margin-left: 0;
+    float: right;
+    margin-right: 10vw;
+  }
+}
+

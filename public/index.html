@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <!-- Latest version of JQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- GoogleFonts: Raleway light & Francois One -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
+
 </head>
 
 
 <body>
+
+  <!-- NAVBAR ------------------------------------------------------------------------------------->
+  <nav class="navbar--starbucks navbar navbar-fixed-top">
+    <div class="container-fluid">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar__toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img class="navbar__brand" src="images/logo.png" alt="Logo Starbucks"></a>
+      </div> <!-- /.navbar-header -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="navbar__collapse collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar__navigation nav navbar-nav navbar-right">
+          <li><a class="navbar__link" href="#">CAFÉ</a></li>
+          <li><a class="navbar__link" href="#">CARTA</a></li>
+          <li><a class="navbar__link" href="#">TIENDA</a></li>
+          <li><a class="navbar__link" href="#">RESPONSABILIDAD</a></li>
+          <li><a class="navbar__link" href="#">ACERCA DE STARBUCKS</a></li>
+          <li><a class="navbar__link" href="#">CARD</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- BANNERS -------------------------------------------------------------------------------->
+  <section class="banner">
+
+    <!-- banner 1 -->
+    <div class="banner__inner banner__inner--first">
+      <div class="banner__cuadro">
+        <h1>VIVE UNA EXPERIENCIA ÚNICA</h1>
+        <i class="fas fa-star"></i>
+        <p>Starbucks Reserve</p>
+        <button type="button" name="button">Ingresa Acá</button>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- banner 2 -->
+    <div class="banner__inner banner__inner--second">
+      <div class="banner__cuadro">
+        <h1>TU PRÓXIMA BEBIDA PODRÍA SER GRATIS</h1>
+        <i class="far fa-thumbs-up"></i>
+        <p>Regístrate y acumula Sars con tus compras</p>
+        <button type="button" name="button">Únete</button>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- banner 3 -->
+    <div class="banner__inner banner__inner--third">
+      <div class="banner__cuadro">
+        <h1>SABORES FAMILIARES, NUEVOS DESCUBRIMIENTOS</h1>
+        <i class="fas fa-heart"></i>
+        <p>De los más claros a los más oscuros, cada tueste es una expresión de nuestro amor por el café.</p>
+        <button type="button" name="button">Busca tu café perfecto</button>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER ------------------------------------------------------------------------------------->
+  <footer class="footer">
+    <div>
+      <img class="footer__rrss" src="images/fb.png" alt="logo facebook"/>
+      <img class="footer__rrss" src="images/tw.png" alt="logo twitter"/><br/>
+    </div>
+    <div>
+      <img class="footer__logo" src="images/logo.png" alt="logo starbucks"/>
+    </div>
+    <p>&copy 2016 Starbucks Corporatio. All rights reserved.</p>
+    <div class="footer__line"></div>
+  </footer>
 </body>
 
 
